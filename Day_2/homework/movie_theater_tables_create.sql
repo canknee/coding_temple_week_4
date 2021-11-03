@@ -10,7 +10,7 @@ CREATE TABLE employee(
 	employee_id SERIAL PRIMARY KEY,
 	first_name VARCHAR(100),
 	last_name VARCHAR(100),
-	address VARCHAR(15),
+	address VARCHAR(150),
 	routing_number VARCHAR(20),
 	account_number VARCHAR(20)
 );	
@@ -43,4 +43,5 @@ CREATE TABLE ticket(
 	FOREIGN KEY(movie_id) REFERENCES movie(movie_id)
 );
 
-
+SELECT * 
+FROM employee;
